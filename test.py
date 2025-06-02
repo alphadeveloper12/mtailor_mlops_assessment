@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 
 def test_model():
-    model = OnnxModel("model.onnx")
+    model = OnnxModel("accessment/model.onnx")
     preprocessor = ImagePreprocessor()
 
     img = Image.open("./n01667114_mud_turtle.JPEG").convert("RGB")  # Ensure RGB format
